@@ -7,12 +7,158 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="36dp"
+        android:text="@string/title"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="335dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="40dp"
+        android:stretchColumns="*"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle">
+
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="@string/a"
+                android:textColor="#000"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="@string/b"
+                android:textColor="#000"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="@string/ab"
+                android:textColor="#000"
+                android:textSize="30sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="@string/True"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="@string/True"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/textRow2"
+                android:layout_width="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:autofillHints=""
+                android:gravity="center"
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row3"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="@string/True"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="@string/False"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/textRow3"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:inputType="text"
+                android:autofillHints="" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row4"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="@string/False"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="@string/True"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/textRow4"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:inputType="text"
+                android:autofillHints="" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row5"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="@string/False"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="@string/True"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/textRow5"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:inputType="text"
+                android:autofillHints="" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
