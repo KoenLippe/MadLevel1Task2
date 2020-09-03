@@ -7,4 +7,5 @@
     <string name="True">T</string>
     <string name="False">F</string>
     <string name="submit">Submit</string>
+    <string name="correct_message">You got %d answers correct</string>
 </resources>
